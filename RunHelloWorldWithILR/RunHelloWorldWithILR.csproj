@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp31</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld\HelloWorld.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ILRuntim.Mono.Cecil">
+      <HintPath>..\dlls\ILRuntim.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime">
+      <HintPath>..\dlls\ILRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil.Mdb">
+      <HintPath>..\dlls\ILRuntime.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil.Pdb">
+      <HintPath>..\dlls\ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\dlls\LitJson.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
